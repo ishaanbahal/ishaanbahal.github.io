@@ -10,6 +10,7 @@ body{
 	margin-right: 0;
 	border-top: 5px solid #f00;
 	box-shadow: 3px 3px 15px #000000;
+	position:relative;
 }
 
 #ishaan{
@@ -38,23 +39,86 @@ nav ul li:hover{
 	background-color: #111111;
 }
 
-#about{
-	color:#1c241f;
-	background-color: #f00;
-	box-shadow: 2px, 2px, 15px, #0f0f0f;
-}
-
 .quote{
 	font-family:"raleway","helvetica","sans-serif"; 
 	font-size: 40px;
 	color:#e6e6e6;
 	text-align: center;
-	margin-left: 250px;
+	margin-left: 280px;
 }
 
-span{
-	float:right;
+.about-image{
+	position: absolute;
+	margin-top: 100px;
+	margin-left: 75px; 
+	height: 150px;
+	width: 150px;
+	border: 3px solid;
+	overflow: hidden;
+	background-color: #000000;
+	border-radius: 5%;
+	border-color: #e6e6e6;
+}
+
+#abt-img{
+	height: 250px;
+	width: 250px;
+	opacity: 0.6;
+	-webkit-transition: all .5s ease;
+     -moz-transition: all .5s ease;
+       -o-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+          transition: all .5s ease;
+}
+
+
+#abt-img:hover{
+	height: 150px;
+	width: 150px;
+	opacity: 1.0;
+}
+
+.social{
+	position:fixed;
+	bottom:0px;
+	right: 0px;
+	padding-right: 20px;
+
+}
+
+#follow{
+	font-family: "raleway", "helvetica", "arial", "sans-serif";
+	font-size: 18px;
+	color:#e6e6e6;
+}
+
+.social ul li{
+	list-style-type: none;
+}
+
+.social ul li img{
+	opacity: 0.6;
+	padding-left: 3px;
+}
+
+.social ul li img:hover{
+	opacity: 1.0;
+}
+.host{
+	position: fixed;
+	bottom: 0px;
+	padding-left: 5px;
+	padding-bottom: 3px;
 	font-size: 14px;
-	font-family: "sans-serif";
-	color:#999999;
+}
+
+div span{
+	font-family: "raleway", "helvetica", "arial", "sans-serif";
+	color: #e6e6e6;
+}
+
+div a{
+	text-decoration: none;
+	font-family: "raleway", "helvetica", "arial", "sans-serif";
+	color: #37c871;
 }
